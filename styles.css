@@ -144,9 +144,21 @@ nav li:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 540px) {
+  .contact-header h1 {
+    font-size: 3rem;
+  }
+  #navbar {
+    justify-content: center;
+  }
+  .contact-links {
+    flex-direction: column;
+  }
+  .flex-projects {
+    width: 100%;
+  }
   .project {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -238,13 +250,13 @@ nav li:hover {
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
   padding: 3rem 8rem 3rem 0;
   background-color: var(--gray);
 }
 
 footer p {
-  display: flex;
-  justify-content: flex-end;
+  text-align: center;
   font-size: 1.5rem;
 }
